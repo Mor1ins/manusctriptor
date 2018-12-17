@@ -16,3 +16,22 @@
  *= require material/material-dashboard.css
  *= require material/demo.css
  */
+
+.compiled_field {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.work_field {
+    min-width: 40%;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.compile_button {
+    margin: 32px;
+}
+
+.note_field {
+    background-color: #ffffff;
+}
