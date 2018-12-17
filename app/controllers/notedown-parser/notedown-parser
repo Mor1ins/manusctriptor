@@ -1,0 +1,4 @@
+module Notedown
+  require 'tilt/kramdown'
+  include Kramdown
+end
