@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'page/index'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'page#index'
+  get '/', to: 'page#index'
+  get '/compile', to: 'compile#pdf'
+  post '/compile', to: 'compile#compile'
 end

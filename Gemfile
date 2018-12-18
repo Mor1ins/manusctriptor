@@ -65,6 +65,9 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 # Our superset
 gem 'kramdown'
+gem 'prawn'
+gem 'prawn-table'
+
 
 # For frontend
 gem 'bootstrap-sass'
