@@ -38,7 +38,7 @@ function onArrowClick() {
     let button = document.getElementById("btn-arrow");
     let menu = document.getElementById("leftmenu");
     let pos_button = 0;
-    let pos_menu = -600;
+    let pos_menu = -1000;
     let btn_step = 6;
     let menu_step = 10;
     if (button.style.transform === "rotate(180deg)") {
@@ -63,7 +63,7 @@ function onArrowClick() {
 
     function menu_frame() {
         menu.style.display = 'flex';
-        if (pos_menu <= -650 || pos_menu >= 0) {
+        if (pos_menu <= -1150 || pos_menu >= 0) {
             clearInterval(menu_id);
         } else {
             pos_menu += menu_step;
