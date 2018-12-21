@@ -1,0 +1,181 @@
+/*!**/
+ /** This is a manifest file that'll be compiled into application.css, which will include all the files*/
+ /** listed below.*/
+ /***/
+ /** Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's*/
+ /** vendor/assets/stylesheets directory can be referenced here using a relative path.*/
+ /***/
+ /** You're free to add application-wide styles to this file and they'll appear at the bottom of the*/
+ /** compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS*/
+ /** files in this directory. Styles in this file should be added after the last require_* statement.*/
+ /** It is generally better to create a new file per style scope.*/
+ /***/
+ /**= require_tree .*/
+ /**= require_self*/
+ /**= require font-awesome*/
+ /**= require material/material-dashboard.css*/
+ /**= require material/demo.css*/
+ /**!*/
+
+/*.animationload {*/
+    /*background-color: #FFFFFF;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
+    /*z-index: 10000;*/
+    /*display: none;*/
+/*}*/
+/*.osahanloading {*/
+    /*animation: 1.5s linear 0s normal none infinite running osahanloading;*/
+    /*background: #fed37f none repeat scroll 0 0;*/
+    /*border-radius: 50px;*/
+    /*height: 50px;*/
+    /*left: 50%;*/
+    /*margin-left: -25px;*/
+    /*margin-top: -25px;*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*width: 50px;*/
+/*}*/
+/*.osahanloading::after {*/
+    /*animation: 1.5s linear 0s normal none infinite running osahanloading_after;*/
+    /*border-color: #85d6de transparent;*/
+    /*border-radius: 80px;*/
+    /*border-style: solid;*/
+    /*border-width: 10px;*/
+    /*content: "";*/
+    /*height: 80px;*/
+    /*left: -15px;*/
+    /*position: absolute;*/
+    /*top: -15px;*/
+    /*width: 80px;*/
+/*}*/
+/*@keyframes osahanloading {*/
+    /*0% {*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*50% {*/
+        /*background: #85d6de none repeat scroll 0 0;*/
+        /*transform: rotate(180deg);*/
+    /*}*/
+    /*100% {*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+/*#pdf-viewer {*/
+    /*min-width: 100%;*/
+/*}*/
+
+/*.compiled_field {*/
+    /*min-height: 100%;*/
+    /*min-width: 100%;*/
+    /*padding: 0;*/
+/*}*/
+
+/*.work_field {*/
+    /*min-width: 40%;*/
+    /*margin-left: 16px;*/
+    /*margin-right: 16px;*/
+/*}*/
+
+/*.compile_button {*/
+    /*margin: 32px;*/
+/*}*/
+
+/*.note_field {*/
+    /*background-color: #ffffff;*/
+/*}*/
+
+/*.main-panel > .content {*/
+    /*margin-top: 0;*/
+/*}*/
+
+@import "lato/lato";
+
+// change bootstrap variables here, before import directive
+$font-family-sans-serif:  "lato regular", lato, Arial, sans-serif !default;
+$font-size-base:          16px !default;
+
+// "bootstrap-sprockets" must be imported before "bootstrap", "bootstrap/custom" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap/custom";
+//@import "bootstrap/theme";
+
+@import "navigation";
+
+#leftmenu {
+  position: relative;
+  top: -600px;
+  display: none;
+  z-index: 1000;
+  padding-top: 0;
+  justify-content: center;
+  align-content: baseline;
+  margin-left: 10px;
+  //min-height: 90%;
+}
+
+.button-arrow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  outline: none;
+  background: #ddd;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+}
+
+.button-arrow:not(:focus) {
+  background: #ddd;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+}
+
+
+.button-arrow:after, .button-arrow:before {
+  content: "";
+  position: absolute;
+  background: #999;
+  z-index: -1;
+  top: 7.5%;
+  left: -15%;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  height: 10%;
+  margin: auto;
+  box-shadow: 0 1px rgba(0,0,0,.1) inset, 0 1px #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.button-arrow:before {
+  left: 15%;
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.button-arrow:hover {
+  background: #e35d31;
+  box-shadow: none;
+}
+
+.button-arrow:hover:after, .button-arrow:hover:before {
+  background: #fff;
+  box-shadow: none;
+}
+
+@-webkit-keyframes turn-360 {
+  100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes turn-360 {
+  100% {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes turn-90 {
+  100% {-webkit-transform: rotate(90deg);}
+}
+@keyframes turn-90 {
+  100% {transform: rotate(90deg);}
+}
+

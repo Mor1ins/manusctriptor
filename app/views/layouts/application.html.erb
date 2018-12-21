@@ -3,7 +3,6 @@
   <head>
 	  <title><%= content_for?(:title) ? yield(:title) + " - #{APPLICATION_NAME}" : "#{APPLICATION_NAME}" %></title>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	  <%= csrf_meta_tags %>
@@ -12,10 +11,10 @@
 
   <body>
     <%= render 'layouts/navigation' %>
-  <div class="container">
-		  <%= render 'layouts/notifications' %>
-
-      <%= yield %>
+    <%= render 'layouts/sidebar' %>
+    <div class="container">
+        <%#= render 'layouts/notifications' %>
+        <%= yield %>
 	  </div>
   </body>
 </html>

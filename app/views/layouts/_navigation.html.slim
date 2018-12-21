@@ -1,0 +1,23 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  span class="button-arrow" id="btn-arrow" onclick="onArrowClick()" tabindex="0"
+    span
+  a.navbar-brand href="#"
+    button.navbar-toggler aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button"
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav.navbar-left
+        a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-home"></span> Home'.html_safe, root_path)
+        - if current_user
+          a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-lock"></span> Your notebook'.html_safe, notebook_path)
+        - else
+
+      .navbar-nav.navbar-right.nav-margin-right
+        a.navbar-brand href="#"
+          button.navbar-toggler aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label=("Toggle navigation") data-target="#navbarNavAltMarkup" data-toggle="collapse" type="button"
+            span.navbar-toggler-icon
+        - if current_user
+          a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-cog"></span> Settings'.html_safe, edit_user_registration_path)
+          a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-off nav-logout"></span> Log out'.html_safe, destroy_user_session_path, method: 'delete')
+        - else
+          a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-log-in"></span> Login'.html_safe, new_user_session_path)
+          a.nav-item.nav-link.active= link_to('<span class="glyphicon glyphicon-saved nav-register"></span> Register'.html_safe, new_user_registration_path)

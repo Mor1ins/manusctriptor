@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   def contact
   end
 
-  def secret
+  def notebook
   end
 
   protected
