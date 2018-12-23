@@ -7,16 +7,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 	  <%= csrf_meta_tags %>
 
-    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
   </head>
 
   <body>
     <%= render 'layouts/navigation' %>
-    <%= render 'layouts/sidebar' %>
     <%= render 'layouts/modal' %>
+    <%= render 'layouts/sidebar' %>
 <!--    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">modal for @fat</button>-->
     <div class="editor-container">
-        <%#= render 'layouts/notifications' %>
+      <%#= render 'layouts/notifications' %>
       <%= yield %>
 	  </div>
   </body>
