@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/Mor1ins/pdfjs_min-rails
-  revision: 35a6c3756e838a798456fc4567fab50fd9404055
+  revision: 64577727f949acc0c36bda23cb03039abed66c9d
   specs:
     pdfjs_min-rails (0.2.1)
       json (> 1.8.4)

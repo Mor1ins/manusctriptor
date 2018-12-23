@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  markup: MyString
+  is_mobile_friendly: false
+  timestamps: MyString
+
+two:
+  name: MyString
+  markup: MyString
+  is_mobile_friendly: false
+  timestamps: MyString

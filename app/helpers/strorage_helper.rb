@@ -1,0 +1,2 @@
+module StrorageHelper
+end

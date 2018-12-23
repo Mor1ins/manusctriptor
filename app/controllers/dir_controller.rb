@@ -1,0 +1,2 @@
+class DirController < ApplicationController
+end

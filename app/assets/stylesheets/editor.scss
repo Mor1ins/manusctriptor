@@ -61,11 +61,7 @@
   margin-right: 16px;
 }
 
-.compile_button {
-  margin: 32px;
-}
-
-.note_field {
+.note_field, .note_field:focus, note_field:hover {
   background-color: #ffffff;
 }
 

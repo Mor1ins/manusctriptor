@@ -1,0 +1,2 @@
+class NoteDir < ApplicationRecord
+end
