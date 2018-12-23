@@ -10,7 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160812162002) do
+ActiveRecord::Schema.define(version: 20181222132600) do
+
+  create_table "definicitions", force: :cascade do |t|
+    t.string   "name"
+    t.string   "body"
+    t.string   "timestamps"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "directories", force: :cascade do |t|
+    t.string   "name"
+    t.string   "timestamps"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "note_dirs", force: :cascade do |t|
+    t.string   "name"
+    t.string   "timestamps"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "notes", force: :cascade do |t|
+    t.string   "name"
+    t.string   "markup"
+    t.boolean  "is_mobile_friendly"
+    t.string   "timestamps"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false

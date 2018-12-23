@@ -31,13 +31,13 @@ nav.sidebar, .main{
   }
 
   nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
     text-align: center;
     width: 100%;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   nav.sidebar a{
@@ -130,3 +130,7 @@ section{
   margin: 10px;
 }
 
+.container-wrapper-fotms {
+  min-height: 100%;
+  min-width: 90%;
+}

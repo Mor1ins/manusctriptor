@@ -17,79 +17,6 @@
  /**= require material/demo.css*/
  /**!*/
 
-/*.animationload {*/
-    /*background-color: #FFFFFF;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
-    /*z-index: 10000;*/
-    /*display: none;*/
-/*}*/
-/*.osahanloading {*/
-    /*animation: 1.5s linear 0s normal none infinite running osahanloading;*/
-    /*background: #fed37f none repeat scroll 0 0;*/
-    /*border-radius: 50px;*/
-    /*height: 50px;*/
-    /*left: 50%;*/
-    /*margin-left: -25px;*/
-    /*margin-top: -25px;*/
-    /*position: absolute;*/
-    /*top: 50%;*/
-    /*width: 50px;*/
-/*}*/
-/*.osahanloading::after {*/
-    /*animation: 1.5s linear 0s normal none infinite running osahanloading_after;*/
-    /*border-color: #85d6de transparent;*/
-    /*border-radius: 80px;*/
-    /*border-style: solid;*/
-    /*border-width: 10px;*/
-    /*content: "";*/
-    /*height: 80px;*/
-    /*left: -15px;*/
-    /*position: absolute;*/
-    /*top: -15px;*/
-    /*width: 80px;*/
-/*}*/
-/*@keyframes osahanloading {*/
-    /*0% {*/
-        /*transform: rotate(0deg);*/
-    /*}*/
-    /*50% {*/
-        /*background: #85d6de none repeat scroll 0 0;*/
-        /*transform: rotate(180deg);*/
-    /*}*/
-    /*100% {*/
-        /*transform: rotate(360deg);*/
-    /*}*/
-/*}*/
-
-/*#pdf-viewer {*/
-    /*min-width: 100%;*/
-/*}*/
-
-/*.compiled_field {*/
-    /*min-height: 100%;*/
-    /*min-width: 100%;*/
-    /*padding: 0;*/
-/*}*/
-
-/*.work_field {*/
-    /*min-width: 40%;*/
-    /*margin-left: 16px;*/
-    /*margin-right: 16px;*/
-/*}*/
-
-/*.compile_button {*/
-    /*margin: 32px;*/
-/*}*/
-
-/*.note_field {*/
-    /*background-color: #ffffff;*/
-/*}*/
-
-/*.main-panel > .content {*/
-    /*margin-top: 0;*/
-/*}*/
-
 @import "lato/lato";
 
 // change bootstrap variables here, before import directive
@@ -102,6 +29,8 @@ $font-size-base:          16px !default;
 //@import "bootstrap/theme";
 
 @import "navigation";
+@import "notebook";
+@import "editor";
 
 #leftmenu {
   position: relative;
@@ -172,6 +101,10 @@ $font-size-base:          16px !default;
   100% {transform: rotate(360deg);}
 }
 
+body {
+  background-color: #9acffa;
+}
+
 @-webkit-keyframes turn-90 {
   100% {-webkit-transform: rotate(90deg);}
 }
@@ -179,3 +112,21 @@ $font-size-base:          16px !default;
   100% {transform: rotate(90deg);}
 }
 
+a.navbar-brand {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#exampleModal {
+  top: 150px
+}
+
+.pdfViewer .page {
+  margin: 0;
+  border: hidden;
+}
+
+.pdf-show {
+  min-height: 100%;
+  min-width: 100%;
+}

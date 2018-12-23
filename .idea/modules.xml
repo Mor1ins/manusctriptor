@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/manusctriptor.iml" filepath="$PROJECT_DIR$/.idea/manusctriptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pdfjs_min-rails/.idea/pdfjs_min-rails.iml" filepath="$PROJECT_DIR$/../pdfjs_min-rails/.idea/pdfjs_min-rails.iml" />
     </modules>
   </component>
 </project>

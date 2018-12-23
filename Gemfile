@@ -73,9 +73,9 @@ gem 'devise', '4.2.0'
 gem 'font-awesome-rails'
 gem 'popper_js', '~> 1.12.9'
 
-
 gem 'bootstrap-sass', '3.3.7'
 gem 'jbuilder', '2.6.0'         # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jquery-rails', '4.1.1'     # Use jquery as the JavaScript library
+gem 'jquery-rails', '4.1.1'
+gem 'pdfjs_min-rails', git: 'https://github.com/Mor1ins/pdfjs_min-rails'
 gem 'slim-rails'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby] # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

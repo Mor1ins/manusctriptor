@@ -1,0 +1,13 @@
+.main-panel
+  .content.d-flex
+    .container-fluid
+      .container-wrapper-fotms.d-flex.float-right
+        .form-group.d-flex.work_field
+          textarea.form-control.note_field
+        button.btn.btn-outline-secondary.compile_button onclick="compile()" type="button"  compile
+        .form-group.d-flex.work_field
+          .form-control.d-flex.compiled_field
+            .animationload
+              .osahanloading
+            .pdf-show
+              = pdfjs_min pdf_url: "/note.pdf", style: :minimal

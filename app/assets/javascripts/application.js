@@ -71,3 +71,39 @@ function onArrowClick() {
         }
     }
 }
+
+$('#exampleModal').on('show.bs.modal', function (event) {
+    let button = $(event.relatedTarget); // Button that triggered the modal
+    let recipient = button.data('whatever'); // Extract info from data-* attributes
+    let modal = $(this);
+    modal.find('.modal-title').text('New message to ' + recipient);
+    modal.find('.modal-body input').val(recipient);
+});
+
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function refresh_pdf() {
+    $(".pdf-viewer").html();
+}
+
+function compile() {
+    $('.animationload').show();
+    $('#pdf-viewer').hide();
+
+    const text = $(".note_field").val();
+    const xhr = new XMLHttpRequest();
+
+    xhr.onload = async function () {
+        refresh_pdf();
+        $('#pdf-viewer').show();
+        $('.animationload').hide();
+    };
+
+    xhr.open("POST", "/compile", true);
+    let formData = new FormData();
+    formData.append('text', text);
+    xhr.send(formData);
+}
