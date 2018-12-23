@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="809e044f-611b-4b80-bcc6-1a8e12011278" name="Default Changelist" comment="">
 <<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/editor.scss" afterDir="false" />
+`      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/editor.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/modal_view.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/application/notebook.html.slim" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/views/layouts/_editor.html.slim" afterDir="false" />

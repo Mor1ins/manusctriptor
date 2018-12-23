@@ -17,16 +17,6 @@ class CompileController < ActionController::API
     pdf = Kramdown::Document.new(text, input: 'kramdown').to_pdf
     dir = Rails.root.join('public', 'notes')
     Dir.mkdir(dir) unless Dir.exist?(dir)
-<<<<<<< HEAD
     File.open(dir.join('notes.pdf'), 'wb') {|file| file.write(pdf)}
   end
 end
-#
-=======
-    File.open(dir.join('note.pdf'), 'wb') do |file|
-      file.write(pdf)
-    end
-  end
-end
-
->>>>>>> master
